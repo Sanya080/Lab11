@@ -1,0 +1,7 @@
+import random
+a = [0] * 6
+for b in range(1000):
+    c = random.randint(1, 6)
+    a[c - 1] += 1
+for b in range(6):
+    print(f"Грань {b+1}: {a[b]/10:.1f}%")
