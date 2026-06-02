@@ -1,0 +1,6 @@
+with open("multiplication_table.txt", "w", encoding="utf-8") as a:
+    for b in range(1, 11):
+        c = ""
+        for d in range(1, 11):
+            c += f"{b} x {d} = {b*d}  "
+        a.write(c + "\n")
