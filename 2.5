@@ -1,0 +1,13 @@
+try:
+    a = []
+    for b in ["file1.txt", "file2.txt"]:
+        with open(b, "r") as c:
+            for d in c:
+                a.append(int(d.strip()))
+    a = sorted(set(a))
+
+    with open("merged.txt", "w") as b:
+        for c in a:
+            b.write(str(c) + "\\n")
+except FileNotFoundError:
+    print("Файл не знайдено")
