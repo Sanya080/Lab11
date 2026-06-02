@@ -1,0 +1,13 @@
+def count_vowels(a):
+    b = "аеєиіїоуюяAEIOUYaeiouy"
+    return sum(1 for c in a if c in b)
+def reverse_words(a):
+    return " ".join(a.split()[::-1])
+def to_pig_latin(a):
+    b = []
+    for c in a.split():
+        if len(c) > 1:
+            b.append(c[1:] + c[0] + "ay")
+        else:
+            b.append(c + "ay")
+    return " ".join(b)
