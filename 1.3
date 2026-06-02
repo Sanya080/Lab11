@@ -1,0 +1,10 @@
+from datetime import date
+a = int(input("Рік: "))
+b = int(input("Місяць: "))
+c = int(input("День: "))
+d = date(a, b, c)
+e = date.today()
+f = e.year - d.year - ((e.month, e.day) < (d.month, d.day))
+g = ["понеділок","вівторок","середа","четвер","п'ятниця","субота","неділя"]
+print("Вік:", f)
+print("День народження:", g[d.weekday()])
