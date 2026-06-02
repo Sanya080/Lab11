@@ -1,0 +1,9 @@
+import random
+import string
+for a in range(5):
+    b = string.ascii_letters + string.digits
+    while True:
+        c = ''.join(random.choice(b) for d in range(8))
+        if any(e.isupper() for e in c) and any(e.islower() for e in c) and any(e.isdigit() for e in c):
+            print(c)
+            break
