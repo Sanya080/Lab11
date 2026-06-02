@@ -1,0 +1,8 @@
+a = []
+with open("grades.csv", "r", encoding="utf-8") as b:
+    for c in b:
+        d = c.strip().split(",")
+        e = list(map(int, d[2:]))
+        a.append((d[0], d[1], sum(e)/len(e)))
+for b in a:
+    print(b[0], b[1], round(b[2], 1))
