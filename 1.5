@@ -1,0 +1,8 @@
+a = 0
+b = 0
+with open("poem.txt", "r", encoding="utf-8") as c:
+    for d in c:
+        a += 1
+        b += len(d.split())
+print("Рядків:", a)
+print("Слів:", b)
