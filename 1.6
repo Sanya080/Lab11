@@ -1,0 +1,7 @@
+a = ""
+with open("text.txt", "r", encoding="utf-8") as b:
+    for c in b.read().split():
+        d = c.strip(".,!?;:-")
+        if len(d) > len(a):
+            a = d
+print(f'Найдовше слово: "{a}" ({len(a)} символів)')
