@@ -1,0 +1,5 @@
+with open("source.txt", "r", encoding="utf-8") as a, \
+     open("filtered.txt", "w", encoding="utf-8") as b:
+    for c in a:
+        if len(c.strip()) > 20:
+            b.write(c)
