@@ -1,0 +1,10 @@
+def encrypt(a):
+    b = ""
+    for c in a:
+        b += chr(ord(c) + 1)
+    return b
+def decrypt(a):
+    b = ""
+    for c in a:
+        b += chr(ord(c) - 1)
+    return b
