@@ -1,0 +1,4 @@
+from datetime import datetime
+a = input("Запис: ")
+with open("diary.txt", "a", encoding="utf-8") as b:
+    b.write(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} - {a}\n")
