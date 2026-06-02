@@ -1,0 +1,8 @@
+a = 0
+with open("numbers.txt", "r", encoding="utf-8") as b:
+    while True:
+        c = b.readline()
+        if not c:
+            break
+        a += float(c)
+print("Сума чисел:", a)
